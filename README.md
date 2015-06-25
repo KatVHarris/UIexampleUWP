@@ -7,7 +7,7 @@ It shows new Layout Controls: Realitive Panels and Split View.
 
 It also highlights the subttle differences in UI for menus and overall themes for 10 vs. 8. 
 
-Activity 1 - Realitive Panels
+Activity 1 - Relative Panels
 
 Activity 2 - Split View
 
