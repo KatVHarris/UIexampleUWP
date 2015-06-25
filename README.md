@@ -13,4 +13,5 @@ Activity 2 - Split View
 
 Activity 3 - Adaptive Layouts
 
+You can read more about it here on my blog: http://kaharri.com
 You can see more Samples from Microsoft here: https://github.com/Microsoft/Windows-universal-samples 
