@@ -8,8 +8,8 @@
     mc:Ignorable="d" NavigationCacheMode="Enabled">
 
     <Page.BottomAppBar>
-        <CommandBar x:Name="bottomAppBar" Visibility="Visible"  IsOpen="False" ClosedDisplayMode="Minimal"  IsSticky="False">
-            <AppBarButton x:Name="searchButton" Label="Star" Icon="Favorite" />
+        <CommandBar x:ConnectionId='1' x:Name="bottomAppBar" Visibility="Visible"  IsOpen="False" ClosedDisplayMode="Minimal"  IsSticky="False">
+            <AppBarButton x:ConnectionId='2' x:Name="searchButton" Label="Star" Icon="Favorite" />
         </CommandBar>
     </Page.BottomAppBar>
 
@@ -17,24 +17,24 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-            <Button Name="SplitViewButton" Background="Transparent" Padding="0,-6" Margin="12" Click="SplitViewButton_Click">
+            <Button x:ConnectionId='3' Name="SplitViewButton" Background="Transparent" Padding="0,-6" Margin="12"                              >
                 <FontIcon FontFamily="{ThemeResource ContentControlThemeFontFamily}" Glyph="&#x2261;" FontSize="32" Margin="0,-8,0,0"/>
             </Button>
             <TextBlock Style="{ThemeResource SubheaderTextBlockStyle}" Text="My App Title Here" 
                    RelativePanel.RightOf="SplitViewButton" />
-            <SplitView x:Name="MySplitView" PaneBackground="{ThemeResource ApplicationPageBackgroundThemeBrush}" OpenPaneLength="200"
+            <SplitView x:ConnectionId='4' x:Name="MySplitView" PaneBackground="{ThemeResource ApplicationPageBackgroundThemeBrush}" OpenPaneLength="200"
                    RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.Below="SplitViewButton">
                 <SplitView.Pane>
                     <RelativePanel>
                         <!-- Static Relativepanel, substitutes nested stackpanel or grid with rows/columns for this simple scenario -->
-                        <AppBarButton x:Name="BackgroundButton" Icon="Pictures"/>
+                        <AppBarButton x:ConnectionId='5' x:Name="BackgroundButton" Icon="Pictures"/>
                         <TextBlock Text="Background"  
                                RelativePanel.RightOf="BackgroundButton" />
-                        <AppBarButton x:Name="LockButton" Icon="SetLockScreen" 
+                        <AppBarButton x:ConnectionId='6' x:Name="LockButton" Icon="SetLockScreen" 
                                   RelativePanel.Below="BackgroundButton"/>
                         <TextBlock Text="Lock screen"  
                                RelativePanel.RightOf="LockButton" RelativePanel.Below="BackgroundButton"  />
-                        <AppBarButton x:Name="CameraButton" Icon="Camera" 
+                        <AppBarButton x:ConnectionId='7' x:Name="CameraButton" Icon="Camera" 
                                   RelativePanel.Below="LockButton" />
                         <TextBlock Text="Camera"  
                                RelativePanel.RightOf="CameraButton" RelativePanel.Below="LockButton" />
@@ -42,10 +42,10 @@
                 </SplitView.Pane>
                 <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" HorizontalScrollMode="Enabled" IsEnabled="True">
                     <RelativePanel Margin="50,38,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="300" Grid.Row="1">
-                        <Rectangle x:Name="Rectangle1" Fill="Red" Height="100" Width="100"/>
-                        <Rectangle x:Name="Rectangle2" Fill="Blue" Height="100" Width="100" RelativePanel.RightOf="Rectangle1" Margin="8,0,0,0"/>
-                        <Rectangle x:Name="Rectangle3" Fill="Green" Height="100" Width="100" RelativePanel.Below="Rectangle1" Margin="0,8,0,0"/>
-                        <Rectangle x:Name="Rectangle4" Fill="Yellow" Height="100" Width="100" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True" Margin="0,8,0,0"/>
+                        <Rectangle x:ConnectionId='8' x:Name="Rectangle1" Fill="Red" Height="100" Width="100"/>
+                        <Rectangle x:ConnectionId='9' x:Name="Rectangle2" Fill="Blue" Height="100" Width="100" RelativePanel.RightOf="Rectangle1" Margin="8,0,0,0"/>
+                        <Rectangle x:ConnectionId='10' x:Name="Rectangle3" Fill="Green" Height="100" Width="100" RelativePanel.Below="Rectangle1" Margin="0,8,0,0"/>
+                        <Rectangle x:ConnectionId='11' x:Name="Rectangle4" Fill="Yellow" Height="100" Width="100" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True" Margin="0,8,0,0"/>
                     </RelativePanel>
                 </ScrollViewer>
             </SplitView>
@@ -73,3 +73,4 @@
 
     </Grid>
 </Page>
+

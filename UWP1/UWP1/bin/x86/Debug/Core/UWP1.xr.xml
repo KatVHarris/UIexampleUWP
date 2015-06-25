@@ -58,7 +58,6 @@
       <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
-      <RootProperty Name="DisplayMode" />
       <RootProperty Name="PaneBackground" />
       <RootProperty Name="OpenPaneLength" />
       <RootProperty Name="Pane" />
