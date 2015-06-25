@@ -472,3 +472,11 @@ C:\Users\kaharri\Documents\GitHub\UIexampleUWP\UWP1\UWP1\obj\x86\Debug\AppLocalN
 C:\Users\kaharri\Documents\GitHub\UIexampleUWP\UWP1\UWP1\obj\x86\Debug\AppLocalNetFXResources\empty.pri.resfiles
 C:\Users\kaharri\Documents\GitHub\UIexampleUWP\UWP1\UWP1\obj\x86\Debug\AppLocalNetFXResources\applocalnetfxresources.resfiles
 C:\Users\kaharri\Documents\GitHub\UIexampleUWP\UWP1\UWP1\obj\x86\Debug\AppLocalNetFXResources\priconfig.netfx.xml
+C:\Users\kaharri\Documents\GitHub\UIexampleUWP\UWP1\UWP1\obj\x86\Debug\Microsoft.Diagnostics.Tracing.EventSource\layout.resfiles
+C:\Users\kaharri\Documents\GitHub\UIexampleUWP\UWP1\UWP1\obj\x86\Debug\Microsoft.Diagnostics.Tracing.EventSource\layout.resfiles.intermediate
+C:\Users\kaharri\Documents\GitHub\UIexampleUWP\UWP1\UWP1\obj\x86\Debug\Microsoft.Diagnostics.Tracing.EventSource\Resources.resfiles
+C:\Users\kaharri\Documents\GitHub\UIexampleUWP\UWP1\UWP1\obj\x86\Debug\Microsoft.Diagnostics.Tracing.EventSource\Resources.resfiles.intermediate
+C:\Users\kaharri\Documents\GitHub\UIexampleUWP\UWP1\UWP1\obj\x86\Debug\Microsoft.Diagnostics.Tracing.EventSource\pri.resfiles
+C:\Users\kaharri\Documents\GitHub\UIexampleUWP\UWP1\UWP1\obj\x86\Debug\Microsoft.Diagnostics.Tracing.EventSource\pri.resfiles.intermediate
+C:\Users\kaharri\Documents\GitHub\UIexampleUWP\UWP1\UWP1\obj\x86\Debug\Microsoft.Diagnostics.Tracing.EventSource\priconfig.xml
+C:\Users\kaharri\Documents\GitHub\UIexampleUWP\UWP1\UWP1\obj\x86\Debug\Microsoft.Diagnostics.Tracing.EventSource\priconfig.xml.intermediate

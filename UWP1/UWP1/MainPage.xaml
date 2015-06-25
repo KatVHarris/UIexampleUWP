@@ -50,26 +50,30 @@
                 </ScrollViewer>
             </SplitView>
         </RelativePanel>
-        <!--<Grid.RowDefinitions>
-            <RowDefinition Height="31*"/>
-            <RowDefinition Height="149*"/>
-        </Grid.RowDefinitions>-->
-        <!--<StackPanel Grid.Row="0" Orientation="Horizontal">
-            <TextBlock Grid.Row="0" x:Name="textBlock" HorizontalAlignment="Left" Margin="20,0,0,0" TextWrapping="Wrap" Text="APP TITLE/Name" VerticalAlignment="Center" FontSize="24"/>
-            <AutoSuggestBox PlaceholderText="Auto Suggest Box Search" VerticalAlignment="Center" Margin="0" Width="250" HorizontalAlignment="Right">
-                <AutoSuggestBox.QueryIcon>
-                    <SymbolIcon Symbol="Find"/>
-                </AutoSuggestBox.QueryIcon>
-            </AutoSuggestBox>
-            --><!--="Control2_TextChanged" QuerySubmitted="Control2_QuerySubmitted" SuggestionChosen="Control2_SuggestionChosen" --><!--
-        </StackPanel>-->
+        <VisualStateManager.VisualStateGroups>
+            <!-- Visual states reflect the application's window size -->
+            <VisualStateGroup>
+                <VisualState x:Name="WideLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MySplitView.DisplayMode" Value="Inline" />
+                        <Setter Target="MySplitView.IsPaneOpen" Value="True" />
+                    </VisualState.Setters>
+                </VisualState>
 
-            <!--<TextBlock Grid.Row="0" x:Name="textBlock" HorizontalAlignment="Left" Margin="20,0,0,0" TextWrapping="Wrap" Text="APP TITLE/Name" VerticalAlignment="Center" FontSize="24"/>
-            <AutoSuggestBox PlaceholderText="Auto Suggest Box Search" VerticalAlignment="Center" Margin="0,0,30,0" Width="250" HorizontalAlignment="Right">
-                <AutoSuggestBox.QueryIcon>
-                    <SymbolIcon Symbol="Find"/>
-                </AutoSuggestBox.QueryIcon>
-            </AutoSuggestBox>-->
+                <VisualState x:Name="NarrowLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MySplitView.DisplayMode" Value="Overlay" />
+                        <Setter Target="MySplitView.IsPaneOpen" Value="False" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
 
     </Grid>
 </Page>
