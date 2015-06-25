@@ -11,6 +11,6 @@ Activity 1 - Realitive Panels
 
 Activity 2 - Split View
 
-Activity 3 - App Bars and Menus Search Bar and Auto Complete
+Activity 3 - Adaptive Layouts
 
 You can see more Samples from Microsoft here: https://github.com/Microsoft/Windows-universal-samples 
